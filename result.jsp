@@ -65,7 +65,9 @@ String word = (String) session.getAttribute("word");
     
     </br>
     <!-- Get the audio for the morse code -->
-    <button> Play the audio </button>
+    <form name="playAudio" action="playAudio" method="post">
+        <input type="submit" name="playAudio" value="Play Audio" />
+    </form>
     
     </br>
     <a href="index.jsp"> Play again </a>
