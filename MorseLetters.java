@@ -10,7 +10,7 @@ public class MorseLetters
 		
 		for(int i = 0; i < word.length(); i++)
 		{
-				submiss[i] = Character.toString(word.charAt(i));	
+			submiss[i] = Character.toString(word.charAt(i));	
 		}
 	}
 	
