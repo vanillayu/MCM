@@ -4,13 +4,15 @@ public class MorsePics
 {
 	private Letter let;
 	
-	/** Constructor*/
+	/** Constructor
+	     @param l Represents the letter to be matched*/
 	public MorsePics(Letter l)
 	{
 		let = l;
 	}
 	
-	/** A method that matches the picture to the letter*/
+	/** A method that matches the picture to the letter
+	    @return Returns a name of the filename that corresponds to let*/
 	public String matchPic()
 	{
 		if(let == Letter.A)
