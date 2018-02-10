@@ -17,15 +17,15 @@ public class MorseAudios
 	{
 		if(let == Letter.A)
 		{
-			return "Morse Code Alphabet A Alpha.mp3";
+			return "Morse-Code-Alphabet-A-Alpha.mp3";
 		}
 		else if(let == Letter.B)
 		{
-			return "Morse Code Alphabet B Bravo.mp3";
+			return "Morse-Code-Alphabet-B-Bravo.mp3";
 		}
 		else if(let == Letter.C)
 		{
-			return "Morse Code Alphabet C Charlie.mp3";
+			return "Morse-Code-Alphabet-C-Charlie.mp3";
 		}
 		else if(let == Letter.D)
 		{
