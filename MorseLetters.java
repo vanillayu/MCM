@@ -4,7 +4,7 @@ public class MorseLetters
 {
 	private String [] submiss;
 
-	MorseLetters(String word)
+	public MorseLetters(String word)
 	{
 		submiss = new String[word.length()];
 		
