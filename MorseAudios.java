@@ -1,4 +1,4 @@
-enum Letter{A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z}
+ enum Letter{A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z}
 
 public class MorseAudios 
 {
@@ -17,15 +17,15 @@ public class MorseAudios
 	{
 		if(let == Letter.A)
 		{
-			return "Morse-Code-Alphabet-A-Alpha.mp3";
+			return "Morse Code Alphabet A Alpha.mp3";
 		}
 		else if(let == Letter.B)
 		{
-			return "Morse-Code-Alphabet-B-Bravo.mp3";
+			return "Morse Code Alphabet B Bravo.mp3";
 		}
 		else if(let == Letter.C)
 		{
-			return "Morse-Code-Alphabet-C-Charlie.mp3";
+			return "Morse Code Alphabet C Charlie.mp3";
 		}
 		else if(let == Letter.D)
 		{
