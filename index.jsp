@@ -18,6 +18,8 @@
         </br>
         </br>
         <input type="submit" name="submit" value="Get your visualized morse code!" />
+    
+        <input type="hidden" name="counter" value="0" />
     </form>
 </body>
 </html>
