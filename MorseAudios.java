@@ -4,13 +4,15 @@ public class MorseAudios
 {
 	private Letter let;
 	
-	/** Constructor*/ 
+	/** Constructor
+	     @param l Represents the letter to be matched */ 
 	public MorseAudios(Letter l)
 	{
 		let = l;
 	}
 	
-	/** A method that matches the audio to the letter*/
+	/** A method that matches the audio file name to the Letter
+	    @return Returns the name of the audio file for the letter*/
 	public String matchAudio()
 	{
 		if(let == Letter.A)
