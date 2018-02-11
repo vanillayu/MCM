@@ -13,12 +13,12 @@
     <p> Please type a word or phrase less than 15 characters here! </p>
     <p> Click "submit" to get your word in a beautiful visualized Morse Code format. Turn on your sound! </p>
     
-    <form name="MCM" action="" method="post">
+    <form name="MCM" action="verify" method="post">
         <input type="text" name="word" value="put your word or phrase here" />
         </br>
         </br>
         <input type="submit" name="submit" value="Get your visualized morse code!" />
-    
+        
         <input type="hidden" name="counter" value="0" />
     </form>
 </body>
