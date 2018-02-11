@@ -188,7 +188,7 @@ public class MorseLetters
 		/* Matching the punctuation characters to their enumerations*/
 		if((Character.isLetter(chara) == false) && (Character.isDigit(chara) == false))
 		{
-			if(chara == '&')
+			if((chara == '&') || (chara == ' '))
 			{
 				return Letter.AMPER;
 			}
