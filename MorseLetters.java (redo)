@@ -6,6 +6,8 @@ public class MorseLetters
 	    @param word Represents the word/phrase to be translated into Morse Code**/
 	public MorseLetters(String word)
 	{
+		word = word.toLowerCase();
+		
 		submiss = new String[word.length()];
 		
 		for(int i = 0; i < word.length(); i++)
