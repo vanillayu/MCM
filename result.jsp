@@ -13,6 +13,7 @@ String mA= (String) session.getAttribute("mA");
 int counter = (Integer) session.getAttribute("counter");
 int total = (Integer) session.getAttribute("total");
 String word = (String) session.getAttribute("word");
+mA = "MorseAudios/" + mA;
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -21,18 +22,22 @@ String word = (String) session.getAttribute("word");
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <title>Your Morse Code Visualization</title>
     <link type="text/css" rel="stylesheet" href="css.css" />
+    
+    <!-- Javascript: play the audio -->
+    <script>
+        
+        function playAudio(){
+        	var audio = document.getElementById("morseAudio");
+        	audio.play();
+        }
+    </script>
+    
+    
 </head>
 <body>
     <h1> Check your Morse Code Visualization here! </h1>
     <p> Click "previous" or "next" to look at the visualization for each letter of your word! </p>
     <p> Click "Try again" to start a new visualization! </p>
-    
-    <h2> Test Section </h2>
-    <p> <%=mP %>  </p>
-    <p> <%=mA %> </p>
-    <p> <%=counter %> </p>
-    <p> <%=total %> </p>
-    <p> <%=word %> </p>
     
     <!-- Get the picture for the morse code -->
     <img src='MorsePics/<%=mP %>' />
@@ -65,9 +70,10 @@ String word = (String) session.getAttribute("word");
     
     </br>
     <!-- Get the audio for the morse code -->
-    <form name="playAudio" action="playAudio" method="post">
-        <input type="submit" name="playAudio" value="Play Audio" />
-    </form>
+    <form>   
+        <input type="button" value="Play Audio" onclick="playAudio()" />
+        <audio id="morseAudio" src='<%=mA %>'></audio>
+    </form> 
     
     </br>
     <a href="index.jsp"> Play again </a>
